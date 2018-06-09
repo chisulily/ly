@@ -1,0 +1,148 @@
+*{
+	box-sizing:border-box;
+}
+/************************************2.1.gallery基本样式*************************************/
+.gallery{
+	position:relative;
+	margin:0 auto;
+}
+#conMenu {
+	width:1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#conMenu section{
+	min-height:960px;
+}
+.gallery-top {
+    margin-bottom: 3%;
+	margin-top: 3%;
+}
+.heading h3 {
+    color: #fff;
+    background: #190608;
+    padding: 10px 0px;
+    border: 1px solid #190608;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 0 auto;
+	width: 17%;
+    text-align: center;
+}
+.da-thumbs {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+/***************************2.2.gallery的悬停嵌套****************************/
+	.da-thumbs .limenu {
+		float: left;
+		margin: 0.4%;
+		background: #EFEFEF;
+		padding: 8px;
+		position: relative;
+		box-shadow: 0 1px 3px rgba(231, 231, 231, 0.43);
+		width: 32.4%;
+		height:272px;
+		position: relative;
+		overflow: hidden;
+	}
+	.da-thumbs li a{
+		overflow: hidden;
+		display: block;
+		position: relative;
+		width: 100%;
+		border-radius: 5px;
+	}
+	.da-thumbs li a img {
+		overflow: hidden;
+		display: block;
+		position: relative;
+		width: 100%;
+		border-radius: 5px;
+	}
+	img {
+		vertical-align: middle;
+		border: 0;
+	}
+	.da-thumbs .ctxt{
+		position: absolute;
+		background: rgba(0,0,0,.5);
+		bottom:-295px;
+		height:295px;
+		width:100%;
+		text-align: center;
+	}
+	.limenu:hover .ctxt{
+		bottom:0;
+		transition: 0.5s all ease;
+	}
+	.da-thumbs .ctxt .b-link-stripe{
+		margin: 1.5em 0 0 0;
+		font-size: 34px;
+		text-align: center;
+		color: #FFF;
+		font-family: 'Audiowide-Regular';
+	}
+	.da-thumbs span {
+		display: block;
+		padding: 10px 0;
+		margin: 11px 20px 20px 20px;
+		font-weight: normal;
+		text-transform: capitalize;
+		color: rgba(255,255,255,0.9);
+		text-align: center;
+		font-size: 14px;
+		font-family: 'Raleway-Regular';
+	}
+	/*菜单里的在线预订按钮*/
+	#libutton{
+		width: 120px;
+		height: 28px;
+		text-align: center;
+		color:#fff;
+		border: 1px solid #ddd;
+		font-size: 16px;
+		font-weight:bold;
+		transition: 0.5s all ease;
+		display:inline-block;
+	}
+	#libutton:hover{
+		color:#F3AD45;
+		cursor: pointer;
+		background: #fff;
+	}
+
+
+/***************分页条样式*********************/
+#pages{
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	min-height:26px;
+	width:500px;
+	box-sizing:border-box;
+}	
+#pages  a{
+	float:left;
+	border:2px solid #F3AD45;
+	border-radius:3px;
+	padding:5px 20px;
+	margin-left:10px;
+	margin-bottom:60px;
+	font-size:16px;
+	display:inline-block;	
+}
+#pages a:hover{
+	background:#ddd;
+}
+.current,.disabled{
+	background:#ddd;
+}

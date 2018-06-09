@@ -1,0 +1,278 @@
+*{	box-sizing:border-box;}
+/*****************2.产品细节****************************/
+#product-details{
+    width: 1200px;
+	margin:20px auto;
+	position:relative;
+}
+#product-details .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+	margin-bottom:100px;
+}
+/*****************2.1.产品细节左侧****************************/
+#preview{
+    width:50%;
+}
+#mediumDiv{
+    width: 352px;
+    margin-bottom: 5px;
+}
+#mediumDiv #mImg{
+    width: 352px;
+}
+#icon_list{
+    min-height:30px;
+    left:20px;
+}
+#icon_list:after{
+    display: block;
+    content:"";
+    clear:both;
+}
+#icon_list li{
+    float:left;
+    padding: 10px 20px;
+}
+#preview .smDiv{
+    width: 352px;
+    height: 54px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+#preview .forward,#preview .backward{
+    width: 17px;
+    height: 52px;
+    background-image: url(../images/iconlist_1.png);
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+}
+#preview a.backward.disabled {
+    background-position: -68px -139px;
+}
+#preview a.forward {
+    background-position: -17px -139px;
+    right:0px;
+}
+
+/*****************2.2.产品细节右侧****************************/
+#show-details{
+    width:50%;
+    position: relative;
+    font-weight:bold;
+    line-height:2.5;
+}
+/*标题描述*/
+#show-details h1,#show-details h3{
+    font-weight:bold;
+    line-height:2.5;
+}
+/*价格*/
+#show-details .price span{
+    color:#F3AD45;
+    font-size:2em;
+}
+/*口味*/
+#show-details .taste{
+    display: flex;
+}
+#show-details .taste a{
+    display: inline-block;
+    border:#aaaaaa 2px solid ;
+    padding: 2px 10px;
+}
+/*数量*/
+#show-details p.account{
+    margin-top: 10px;
+}
+#show-details p.account>button {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    font-size: 14px;
+}
+#show-details p.account>input {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+    top: 2px;
+}
+/*预订*/
+#show-details div.shops{
+    margin-top: 10px;
+}
+#show-details div.shops>a {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+#show-details div.shops a.buy{
+    color:#fff;
+    background: #F3AD45;
+}
+#show-details div.shops a.buy:hover{
+    background: #FBB448;
+}
+
+/*****************3.为你推荐****************************/
+.tuijian{
+    width:1200px;
+/*    min-height:300px;*/
+    overflow: hidden;
+	position:relative;
+	margin:30px 0;
+}
+#product-details h2,.tuijian h2{
+    color: #fff;
+    background: #190608;
+    padding: 10px 0px;
+    border: 1px solid #190608;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 40px  auto;
+    width: 17%;
+    text-align: center;
+}
+.tuijian-list{
+    max-width: 1100px;
+    padding:0px 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.tuijian li{
+    max-width:200px;
+}
+.tuijian img{
+    max-width:200px;
+}
+
+/************************4.在线预订******************************/
+.order-list{
+    position: fixed;
+    top:50%;
+    left:50%;
+    min-width: 300px;
+    min-height:280px;
+    background: #fff;
+    border:#eee 1px solid;
+    border-radius: 5px;
+    margin:0 auto;
+    padding:5px 20px;
+    opacity:0.9;
+    display: none;
+}
+.order-list h3{
+    color: #fff;
+    background: #190608;
+    padding: 10px 0px;
+    border: 1px solid #190608;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 15px  auto 10px;
+    width: 66%;
+    text-align: center;
+}
+
+.order-list input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+    top: 2px;
+    margin: 5px auto;
+
+}
+
+.order-list a{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin: 15px auto ;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#submit{
+    background: #FBB448;
+    color:#fff;
+}
+#submit:hover{
+    background:#fff;
+    color:#F3AD45;
+}
+
+/***********预订成功***********/
+.order-ok{
+    position: fixed;
+    top:30%;
+    left:50%;
+    min-width: 270px;
+    min-height:80px;
+    background: #fff;
+    border:#eee 1px solid;
+    border-radius: 5px;
+    margin:0 auto;
+    padding:5px 20px;
+    opacity:0.9;
+    display: none;
+}
+.order-list p{
+    margin:10px auto;
+    line-height: 1.5;
+}
+#know{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin: 15px auto ;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

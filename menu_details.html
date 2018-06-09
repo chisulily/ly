@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>BreadShop_Menu</title>
+      <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/menu_details.css">
+ </head>
+ <body>
+  	<!--1.引入头部网页  -->
+	<header id="header">
+      <!--<img src="images/loading.gif" alt="加载中..." >-->
+    </header>	
+	<!--2.产品细节-->
+	<div id="product-details">		
+		<h2>在线预订</h2>
+		<div class="details">
+			<!--2.1.左侧图片-->
+			<div id="preview">
+				<div id="mediumDiv">
+					<img id="mImg" src="images/menu/m_1.png">
+					<div id="mask"></div>
+					<div id="superMask"></div>
+				</div>
+				<div id="largeDiv"></div>
+				<div class="smDiv">
+					<a class="backward disabled" href="#"></a>
+					<a class="forward" href="#"></a>
+					<ul id="icon_list">
+						<!--<img src="img/loading.gif" alt="加载中..." >-->
+						<!-- <li class="i1"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li> -->
+						<li><img src="images/top_arrow.png" alt=""></li>
+						<li><img src="images/top_arrow.png" alt=""></li>
+						<li><img src="images/top_arrow.png" alt=""></li>
+						<li><img src="images/top_arrow.png" alt=""></li>
+						<li><img src="images/top_arrow.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<!--2.2 右测 ：文字信息 #show-details width:490px-->
+			<div id="show-details">
+				<h1>
+<!-- 				甜甜圈系列 -->
+				</h1>
+				<h3>
+<!-- 				自然成熟榴莲肉,超薄白巧克力片 -->
+				</h3>
+				<!--价格-->
+				<div class="price">
+					<div class="stu-price">
+						<b>售价：</b>
+						<span>
+<!-- 						￥298 -->
+						</span>
+					</div>
+				</div>
+				<!--口味-->
+				<div class="taste">
+					<!-- <a href="product_details.html?lid=${lid}" class=${
+						  lid===product.lid?"active":""
+						}>${taste}</a> -->
+					<p>口味：</p>
+					<div>
+<!-- 					<a href="#">草莓味</a> -->
+<!-- 					<a href="#">巧克力味</a> -->
+<!-- 					<a href="#">椰蓉味</a> -->
+					</div>
+				</div>
+				<!-- 数量 -->
+				<p class="account">
+					<span>数量：</span>
+					<button class="number-reduce">-</button>
+					<input type="text" value="1">
+					<button class="number-add">+</button>
+				</p>
+				<!-- 预订部分 -->
+				<div class="shops">
+					<a href="javascript:;" class="buy">立即预订</a>
+					<a href="menu.html" class="cart">我再看看</a>
+				</div>
+			</div>
+		</div>
+		<!--3.为你推荐  -->
+		<h2>为你推荐</h2>
+		<div class="tuijian">
+			<ul class="tuijian-list">
+				<li>
+					<a href="#">
+						<img src="images/menu/tuijian1.jpg" alt="">
+						<h4>榴莲飘飘</h4>
+						<p>￥298.00/个</p>
+					</a>
+					<div class="tuijian-cart">
+						<p><a href="#">自然成熟榴莲肉,超薄白巧克力片</a></p>
+						<button>
+							<i>预订</i>
+						</button>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/menu/tuijian2.jpg" alt="">
+						<h4>浅草抹茶</h4>
+						<p>￥398.00/个</p>
+					</a>
+					<div class="tuijian-cart">
+						<p><a href="#">自然成熟榴莲肉,超薄白巧克力片</a></p>
+						<button>
+							<i>预订</i>
+						</button>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/menu/tuijian3.jpg" alt="">
+						<h4>香草奶油</h4>
+						<p>￥238.00/个</p>
+					</a>
+					<div class="tuijian-cart">
+						<p><a href="#">自然成熟榴莲肉,超薄白巧克力片</a></p>
+						<button>
+							<i>预订</i>
+						</button>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/menu/tuijian4.jpg" alt="">
+						<h4>芒果千层</h4>
+						<p>￥268.00/个</p>
+					</a>
+					<div class="tuijian-cart">
+						<p><a href="#">自然成熟榴莲肉,超薄白巧克力片</a></p>
+						<button>
+							<i>预订</i>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--4.弹窗在线预订-->
+	<div class="order-list">
+		<h3>在线预订</h3>
+		<ul>
+			<li>姓名：<input type="text"></li>
+			<li>电话：<input type="text"></li>
+			<li>地址：<input type="textarea"></li>
+			<li>日期：<input type="date"></li>
+		</ul>
+		<a href="#" id="submit">提交</a>
+		<a href="#" class="close">取消</a>
+	</div>
+	<!--5.弹窗提示在线预订成功-->
+	<div class="order-ok">
+		<p>预订成功！稍后客服将会与您联系！</p>
+		<a href="#" id="know">我知道了</a>
+	</div>
+	<!--6.引入尾部网页  -->
+	<footer id="footer">
+      <img src="images/loading.gif" class="loading">
+    </footer>	
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/details.js"></script>
+ </body>
+</html>
+ 

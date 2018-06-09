@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div id="main">
+  <div class="bg">
+    <div class="black">
+        <table id="tata">
+            <tr>
+                <td><h3>新会员注册</h3></td>
+                <td align="right"><a href="login.html">已是会员</a></td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td>
+                    会员昵称
+                </td>
+                <td>
+                    <input type="text" placeholder="3-12位英文字母/数字" id="uname">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    用户密码
+                </td>
+                <td>
+                    <input type="password" placeholder="3-12位英文字母/数字"  id="upwd">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    确认密码
+                </td>
+                <td>
+                    <input type="password" placeholder="请再次确认一下密码"  id="cpwd">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    常用邮箱
+                </td>
+                <td>
+                    <input type="email" placeholder="请输入您的邮箱"  id="email">
+                </td>
+            </tr>
+			<tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    电话号码
+                </td>
+                <td>
+                    <input type="phone" placeholder="可用于找回密码"  id="phone">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td>
+                    所在城市
+                </td>
+                <td>
+                    <select name="provs">
+                        <option>—请选择—</option><!--0-->
+                        <option>北京</option><!--1-->
+                        <option>上海</option>
+                        <option>广州</option>
+                        <option>深圳</option>
+                    </select>
+                    <select name="cities" class="hide" id="city">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td class="sp" colspan="2">
+                    <input type="checkbox" checked>
+                    <span>我已阅读 <a href="#">《会员注册申明》</a></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="注册" id="btn">
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

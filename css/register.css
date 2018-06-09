@@ -1,0 +1,91 @@
+/*login*/
+#main{
+    width:100%;
+    height:1080px;
+    margin:auto;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+#main .bg{
+	width:100%;
+	height:100%;
+    background-image:url(../images/banner2.jpg);
+	background-repeat:no-repeat;	
+	background-size:cover;
+}
+#main>.bg>.black{
+    width:395px;
+    height:600px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    float:right;
+    margin-right:20%;
+    margin-top:100px;
+    border:0;
+    outline:0;
+    border-radius: 4px;
+    position: relative;
+}
+#main div.black table{
+    width:100%;
+    padding:20px;
+    position:absolute;
+}
+#main div.black table td{
+    color:white;
+}
+#main div.black table td input{
+    border-radius: 4px;
+}
+#main div.black table td a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+#main div.black table td.sp{
+    font-size:14px;
+}
+#uname,#upwd,#btn,#cpwd,#email,#phone{
+    width:100%;
+    height:36px;
+    border:0;
+    outline:0;
+    padding:0 50px 0 15px;
+    box-sizing:border-box;
+    margin-top:10px;
+}
+#uname,#upwd{
+    background:#fff url(register/yhm.png) no-repeat right center;
+}
+#upwd{
+    background-image:url(register/mm.png);
+}
+#btn{
+    background:#bbb;
+    color:#fff;
+    padding:10px 125px;
+    border:0;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+}
+table tr td h3{
+    margin-top:10px;
+}
+
+#btn:hover{
+    background:#F3AD45;
+    color:#fff;
+}
+#tata tr .sp span a{
+	font-weight:bold;
+	line-height:1.2;
+}
+#tata tr .sp span a:hover{
+    color:#1d94d1;
+
+}
+.hide{
+    display: none;
+}
+

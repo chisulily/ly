@@ -1,0 +1,166 @@
+*{
+	box-sizing:border-box;
+}
+/* banner轮播图的样式 */
+	#demo {
+		background: #FFF;
+		overflow:hidden;
+		width: 100%;
+		box-sizing:border-box;
+	}
+	#demo img {
+/*		padding:0 1px ;*/
+		width:400px;
+	}
+	#indemo {
+		float: left;
+		width: 800%;
+	}
+	#demo1,#demo2 {float: left;}
+/* grids-1样式 */
+	div.banner-bottom-grid1{
+		width:100%;
+	}
+	div.banner-bottom-grid-left{
+		width:58%;
+		padding:64px 0 0 128px;
+	}
+	div.banner-bottom-grid-left h2{
+		font-size: 2.5em;
+		color: #454445;
+		margin: 0;
+		line-height: 1.5em;
+		text-transform: capitalize;
+	}
+	div.banner-bottom-grid-left h2 span {
+    color: #F3AD45;
+	}
+	div.banner-bottom-grid-left p{
+	    margin: 1em 0 4em;
+		color: #999;
+		line-height: 1.8em;
+		font-size: 14px;
+		width: 70%;
+	}
+	div.more a {
+    padding: 8px 35px;
+    border: 1px solid #F3AD45;
+    font-size: 1em;
+    color: #F3AD45;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+	}
+	/*	灰色背景文字块*/
+	div.banner-bottom-grid{
+		position: relative;
+	}
+	div.banner-bottom-grid div.banner-bottom-grid1{
+		bottom: -37%;
+		position: absolute;
+		bottom: -20%;
+		left: -30%;
+		padding: 16px;
+		width: 100%;
+		background: #454445;
+		z-index: 1;
+	}
+	.banner-bottom-grid1-pos {
+		padding: 32px;
+		border: 1px solid #DFDEDC;
+	}
+	.banner-bottom-grid1-pos h3 {
+		font-size: 2.5em;
+		color: #fff;
+		text-transform: capitalize;
+		margin: 0;
+		text-align: center;
+		line-height: 1.5em;
+	}
+	.banner-bottom-grid1-pos h3 span {
+		font-size: .9em;
+		display: block;
+	}
+	.banner-bottom-grid1-pos h3 i {
+		color: #F3AD45;
+		display: block;
+		font-size: 1.5em;
+	}
+/* grids-2样式 */
+	div.banner-bottom-grid2{
+		width:100%;
+	}
+	/*左边图片和文字*/
+		.banner-bottom-grid-sub{
+			position: relative;
+			padding:0;
+			width:33%;
+		}
+		.img-responsive{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		.banner-bottom-grid-sub1 {
+			position: absolute;
+			left: 0%;
+			padding: 16px;
+			height: 100%;
+			width: 94.5%;
+			top: 1%;
+		}
+		.banner-bottom-grid-sub-pos {
+			padding: 36px;
+			border: 1px solid #DFDEDC;
+		}
+		.banner-bottom-grid-sub-pos h3 {
+			font-size: 3em;
+			color: #fff;
+			text-transform: capitalize;
+			margin: 0;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			line-height: 1.6em;
+		}
+		.banner-bottom-grid-sub-pos h3 span {
+			font-family: 'Oleo Script', cursive;
+			font-size: .7em;
+			color: #F3AD45;
+		}
+		.banner-bottom-grid-sub-pos h3 i {
+			font-style: normal;
+			font-weight: 600;
+		}
+	/*右边文字*/
+		.banner-bottom-grid-left1{
+		    padding: 144px 0 0;
+			width: 67%;
+		}
+		.banner-bottom-grid-left1 p {
+			font-size: 32px;
+			color: #999;
+			margin: 0;
+			line-height: 1.8em;
+			padding-left: 64px;
+			position: relative;
+			text-transform: capitalize;
+		}
+
+/*回到顶部的按钮样式*/
+ #toTop{
+	 position:fixed;
+	 bottom:100px;
+	 right:0;
+	 display:none;
+ }
+ #toTop>a{
+	 color:#F3AD45;
+	 padding:10px 15px;
+	 border:2px solid #F3AD45;
+	 border-radius:5px;
+	 font-weight:bold;
+ }
+ #toTop>a:hover {
+	 background: #aaa;
+	 color: #fff;
+ }
+

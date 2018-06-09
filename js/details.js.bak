@@ -1,0 +1,7 @@
+// 1.获取地址栏的pid
+$(function(){
+    var pid = $(".details");
+
+});
+// 2.异步请求
+

@@ -1,0 +1,71 @@
+/* bread的base */
+/*设置通用样式*/
+body{
+	/* width:1350px; */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px; 
+    color: #333;
+	line-height:1.5;
+    background:#fff;
+	padding:0;
+	outline:0;
+	margin:0;
+	box-sizing:border-box;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oleo Script', cursive;
+    font-weight: 100;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+a:hover{
+	color:#FBB448;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+}
+
+img{
+	vertical-align:middle;
+	border:0;
+}
+.lf{
+	float:left;
+}
+.rf{
+	float:right;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+div.main{
+	width:100%;
+	margin:0 auto;
+}
+div{
+	display:block;
+}
+.fixed_nav{
+	background: rgba(64,42,21,.8);
+	position:fixed;
+	z-index: 6;
+	top:0;
+	left:0;
+	right: 0;
+	width: 100%;
+	height:60px;
+	transition: all 0.5s ease;
+	padding: 15px 0;
+	margin:0 auto;
+
+}

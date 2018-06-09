@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		p{	
+			text-align:center;
+			font-size:18px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <p>您已退出登录，3s后自动跳转到首页……</p>
+    <script>
+        //清除会话中的数据
+        sessionStorage.removeItem("uname");
+        setTimeout(function () {
+            location.href ="index.html";
+        },3000);
+    </script>
+</body>
+</html>

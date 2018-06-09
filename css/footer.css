@@ -1,0 +1,145 @@
+/* 1.footer-top样式 */
+	div.footer-top{
+		width:100%;
+		visibility:visible;
+		text-align:center;
+		/*background: url(images/1.png) no-repeat;*/
+	}
+	/* 1.1.container部分*/
+		div.confoot{
+			margin:0 auto;
+			width:95%;
+			padding:30px;
+			position:absolute;
+
+		}
+		div.confoot h3{
+			font-size:44px;
+			color:#fff;
+		}
+		div.confoot p{
+			font-size:32px;
+			color:#fff;
+			margin:20px auto;
+		}
+		div.confoot h3>span{
+			display:inline-block;
+			font-size:80px;
+			color:#F3AD45;
+			font-weight:bold;
+		}
+		div.more a{
+			padding:10px 35px;
+			font-size:1.5em;
+			border:1px solid #F3AD45;
+			color:#F3AD45;
+			font-family:'Oleo Script', cursive;
+		}
+		div.more a:hover{
+			background:gray;
+			border:1px solid gray;
+			color:#fff;
+		}
+	/* 1.2.img部分 */
+		.footer-top-image {
+			position: absolute;
+			right: 15%;
+		}
+		#footer-img img{
+			width:100%;
+		}
+/* 2.footer-bottom样式 */
+	/*2.1.四块整体样式*/
+		div.footer-copy{
+			width:100%;
+			background:#131313;
+			box-sizing:border-box;
+		}
+		div.footer-copy div.conlast{
+			margin:0 auto;
+			padding:32px 0;
+			position:relative;
+			width:1300px;
+		}
+		div.footer-copy-grids{
+			width:100%;
+			box-sizing:border-box;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		div.footer-copy-grid>h3,.navgi>h3{
+			font-size:2em;
+			margin-bottom:32px;
+			color:#fff;
+			font-family:'Oleo Script', cursive;
+			font-weight:100;
+		}
+		div.footer-copy-grid>h3>span{
+			display:inline-block;
+			font-size:28px;
+			color:#F3AD45;
+			font-weight:bold;
+		}
+	/*2.2.每一小块的东西*/
+		/* 2.2.1.BreadShop */
+			.img1{
+				width:255px;
+			}
+			div.conlast p{
+				width:255px;
+				font-size:14px;
+				color:#999;
+			}
+		/* 2.2.2.mail us */
+			#form{
+				width:300px;
+			}
+			.footer-copy-grid input[type="text"], .footer-copy-grid input[type="email"], .footer-copy-grid textarea {
+				outline: none;
+				border: 1px solid #3B3B3B;
+				padding: 7px 10px;
+				background: #000;
+				color: #999;
+				font-size: 14px;
+				width: 250px;
+			}
+			.footer-copy-grid input[type="submit"] {
+				outline: none;
+				border: none;
+				padding: 7px 0;
+				background: #454445;
+				color: #fff;
+				font-size: 14px;
+				width: 50%;
+				margin: .2em 0 0;
+				cursor: pointer;
+				transition: .5s ease-in-out;
+				-webkit-transition: .5s ease-in-out;
+			}
+			.footer-copy-grid input[type="submit"]:hover{
+				background:#F3AD45;
+			}
+		/* 2.2.3.popular items */
+			.footer-copy-grid3  {
+				display:flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				width:255px;
+				box-sizing:border-box;
+			}
+			.footer3 a img{
+				width:75px;
+				padding:2px 0px;
+			}				
+		/* 2.2.4. Navigation*/
+			.navgi ul li{
+			    background: url(../images/img-sp.png) no-repeat -15px -166px;
+			}
+			.navgi ul li a{
+				color:#999;
+				margin-left: 30px;
+			}
+			.navgi ul li a:hover{
+				color:#fff;
+			}

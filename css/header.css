@@ -1,0 +1,172 @@
+*{
+	box-sizing:border-box;
+}
+/* bread的header */
+	.banner{
+		background:#402A15 ;
+		background-size: cover;
+		min-height:595px;
+	}
+	#contain{
+		position:relative;
+		padding:0;
+		margin:0;
+	}
+	.header-down{
+		background:url("../images/banner.jpg") no-repeat ;
+		background-size: cover;
+		min-height:595px;
+	}
+/*header-top的样式 */
+	.header-top{
+		width:100%;
+		min-height:50px;
+		padding: 2em 0 3em;
+		text-align: center;
+	}
+	.header-top a {
+		padding: 5px 10px;
+		color: #fff;
+	}
+	#header-img img{
+		width:100%;
+	}	
+/* 1.上：导航栏的样式 */
+	/*左边logo图的样式*/
+	#gtco-logo{
+		font-size: 24px;
+		margin: 0 20px;
+		padding: 0;
+		text-transform: uppercase;/*全部大写*/
+		font-weight: bold;
+		color:#eee;
+	}
+	#gtco-logo	em {
+		color: #F3AD45
+	}
+
+	#gtco-logo a:hover{
+		color:#fff;
+	}
+	/*右边5个导航按钮的样式 */
+		#list{
+			box-sizing:border-box;	
+			color:#fff;
+		}
+		#list li{
+			float:left;
+			margin-right:40px;
+			text-align:match-parent;
+		}
+		#list li a{
+			font-size:16px;
+			line-height:30px;
+		}
+		ul li a{
+			transition: .5s ease-in-out;
+			-webkit-transition: .5s ease-in-out;
+		}		
+		#list li.btn-cta a span{
+			border:2px solid rgba(255,255,255,.5);
+			padding:4px 20px;
+			color:#fff;
+			display:inline-block;
+			top:-5px;
+			transition:.3s;
+			border-radius:4px;
+			margin-top:-30px;
+		}
+		#list li.btn-cta a span:hover{
+			background:#fff;
+			color:#F3AD45;
+		}
+		#loginList,#welcomeList{
+			float:right;
+			margin-right:40px;
+		}
+		#loginList li,#welcomeList li{
+			float:left;
+			line-height:30px;
+			padding:2px;
+			font-size:16px;
+		}
+
+/* 3.中：大logo的样式 */
+	.big-logo{
+		width:100%;
+		min-height:200px;
+		margin:0 auto;
+		padding:8em 0 2em;
+		text-align:center;		
+	}
+	div.big-logo h1 a span{
+		display: block;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: #E9E9E9;
+	}
+	div.big-logo h1 a{
+		color:#fff;
+		font-size:100px;
+		font-weight:bold;
+	}
+	div.big-logo h1 a:hover{
+		color:#F3AD45;
+	}
+
+/* 5.下：社交分享的样式 */
+	.social-icons {
+		padding: 2em 0 0;
+		text-align: center;
+	}
+	.social-icons ul li {
+		display: inline-block;
+		padding: 0 !important;
+		margin: 5px !important;
+
+	}
+	.social-icons ul li a {
+		width: 45px;
+		height: 45px;
+		border: 2px solid #fff;
+		border-radius: 100%;
+		cursor:pointer;
+	}
+
+	.social-icons ul li a.twitter {
+		background: url(../images/img-sp.png) no-repeat 1px -46px;
+		display: block;
+	}
+	.social-icons ul li a.twitter:hover {
+		background: url(../images/img-sp.png) no-repeat 1px -46px #F3AD45;
+		border: 2px solid #F3AD45;
+	}
+	.social-icons ul li a.facebook {
+		background: url(../images/img-sp.png) no-repeat -49px -47px;
+		display: block;
+	}
+	.social-icons ul li a.facebook:hover {
+		background: url(../images/img-sp.png) no-repeat -49px -47px #F3AD45;
+		border: 2px solid #F3AD45;
+	}
+	.social-icons ul li a.google  {
+		background: url(../images/img-sp.png) no-repeat -96px -46px;
+		display: block;
+	}
+	.social-icons ul li a.google:hover {
+		background: url(../images/img-sp.png) no-repeat -96px -46px #F3AD45;
+		border: 2px solid #F3AD45;
+	}
+	.social-icons ul li a.p {
+		background: url(../images/img-sp.png) no-repeat -143px -46px;
+		display: block ;
+	}
+	.social-icons ul li a.p:hover  {
+		background: url(../images/img-sp.png) no-repeat -143px -46px  #F3AD45;
+		border: 2px solid #F3AD45;
+	}
+	.social-icons ul li a{
+		transition: .5s ease-in-out;
+		-webkit-transition: .5s ease-in-out;
+	}
